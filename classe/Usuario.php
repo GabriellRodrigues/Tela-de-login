@@ -33,7 +33,7 @@
                 $sql->bindValue(":n", $nome);
                 $sql->bindValue("t", $telefone);
                 $sql->bindValue(":e", $email);
-                $sql->bindValue(":s", $senha);
+                $sql->bindValue(":s", md5($senha));
                 $sql->execute();
                 return true;
             }
@@ -41,15 +41,16 @@
                 
         }
     
-        public function logar ($email, $senha)
+        public function logar($email, $senha)
         {
             global $pdo;
             //verificar se o email e senha estao cadastrados, se sim
             $sql = $pdo->prepare("SELECT id_usuario FROM usuario WHERE email = :e AND senha = :s");
             $sql->bindValue(":e",$email);
-            $sql->bindValue(":s",md5($senha));
+            $sql->bindValue(":s",$senha);
             $sql->execute();
-            if ($sql->rowCount() > 0){
+            if ($sql->rowCount() > 0)
+            {
                 //entrar no sistema (sessao)
                 $dado = $sql->fetch();
                 session_start();
