@@ -9,8 +9,7 @@
 
     <body>
         <?php 
-            $User = "Gabudev";
-            $Password = "12345";
+
         ?>
 
 
@@ -29,10 +28,10 @@
                     <label>Senha:</label>
                     <input type="password" name="senha" placeholder="Digite sua senha" required>
 
-                    <label><input type="checkbox" name="lembrar"> Lembre-me</label>
+                    <label><input type="checkbox"> Lembre-me</label>
 
                     <button type="submit" id="botao-acessar">ACESSAR</button>
-                    <p>Ainda não possui cadastro? <a href="./Arquivos/cadastrar.html" id="link-cad">Cadastrar</a></p>
+                    <p>Ainda não possui cadastro? <a href="./Arquivos/cadastrar.php" id="link-cad">Cadastrar</a></p>
                 </div>
             </div>
         </form>
