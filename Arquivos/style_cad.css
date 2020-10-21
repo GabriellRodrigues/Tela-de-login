@@ -1,0 +1,39 @@
+body{
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+}
+
+.dados-cad {
+    width: 700px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+}
+
+#titulo-cad {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0099cc;
+}
+
+.inputs > input{
+    width: 50%;
+    margin: auto;
+    display: block;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    outline: 0;
+}
+
+.inputs #button {
+    color: rgb(75, 75, 75);
+    outline: 0;
+    width: 50%;
+    margin: auto;
+    display: block;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #00ffff, #0099cc);
+}
